@@ -10,13 +10,13 @@ function listeyeEkle(){
     eklenen.innerHTML=eklenecek
 
     let sil=document.createElement("div");
-    liste.appendChild(sil);
+    eklenen.appendChild(sil);
     sil.innerHTML="X";
     sil.setAttribute("class","close");
     sil.addEventListener("click", listedenSil);
 
     let yapıldı=document.createElement("div");
-    liste.appendChild(yapıldı);
+    eklenen.appendChild(yapıldı);
     yapıldı.innerHTML="✔";
     yapıldı.setAttribute("class","bitti");
     yapıldı.addEventListener("click", ()=>{
